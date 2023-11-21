@@ -1,0 +1,21 @@
+This file contains information about how to deploy tfx-model-server at compute engine.
+Cloud shell instances are volatile so if you are not working they are obliviated and your site goes down. So tfx-server should 
+be deployed on something alwways running.
+
+For this purpose we will create a compute engine instance.
+
+Compute engine wont have the model files u stored in cloud shell. For that we have to list the
+bucket objects for the project and move files from cloud shell to the bucket and access the bucket
+in compute engine instance and move the file to the local directory of compute engine and run the tfx server.
+
+IP forwarding will be off in the compute engine so switch it on by commands.
+
+Use external IP address to send REST request to the tfx-server.
+
+HTTP/HTTPS requests will be blocked by the compute engine by default because of the firewall
+setting. Enable them by creating a new fire-wall rule by command to switch on the protocol
+packets.
+
+#############################   ENJOY   ####################################################
+
+

@@ -1,0 +1,8 @@
+model_config_list {
+  
+  custom_predict {
+    name: "my_custom_predict"
+    request_path: "/mycustomendpoint"
+    http_method: "GET"
+  }
+}

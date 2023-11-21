@@ -1,0 +1,4 @@
+
+######## Feb 20 ########### 
+to do list:
+1.show the percentage of probability on the prediction on front end.

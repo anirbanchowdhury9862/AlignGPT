@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<body>
+    
+	<h1 style="text-align:center;font-size:60px;color:black;font-family:lobster,cursive;"><b>DARKneuron</b>
+	<br><font color="red" size="6">Let's Build Intelligence</font>
+    </h1>
+       
+     
+	<div id="pose_estimation">
+		
+		<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+	  	<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.2.0/dist/tf.min.js"></script>
+<!--         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.153.0/three.js" integrity="sha512-pVI7WePOGwa76jpMIhLH1hk58044Myb/wakz+6ForKGxBYgKp5Pe/lI6MCE3l5YmMKlhpX9jhhKr/7kDTRbfQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/stl-loader@1.0.0/STLLoader.min.js"></script> -->
+         <script src="https://cdn.babylonjs.com/babylon.js"></script>
+         <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+	  	<script src="{{url_for('static',filename='pose_estimation.js')}}"></script>
+        <!-- <p style="text-align: center;font-size:30px;color:red"><b>The digit is {{digit}}</b></p> -->
+ 	</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+Use of CORS: CROSS ORIGIN RESOURCE SHARING
+link https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+What is the use of this thing in this project?
+
+There are two backends 1.flask server 2.tfx server On the initial approach the request
+from front end to get model prediction was handled by flask server and rerouted to tfx server.
+So implying the tfx server to flask server as a local-host was of no issue. Even if the tfx-server
+was in some remote instance(Refer to documentation/tfx_server_on_comppute_engine.ext) service can
+be requested by using the external ip from fetch API. But issue arises when we have to bipass 
+the backend flask server and send the request directly to tfx-server for optimal performance.
+The flask server is serving the front end page so response from any domain which is not the flask server will be blocked
+in front end by browser. So for cross origin resource we need to enable CORS setting in tfx-server side.
+ 
+ --rest_api_enable_cors_support=true
